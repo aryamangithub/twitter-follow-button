@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Follow</title>
+    <style>
+        button{
+            background-color: black;
+            /* background-color: rgb(231, 117, 117); */
+            color: white;
+            text-align: center;
+            border-radius: 28px;
+            padding: 10px 18px;
+            /* width: 75px; */
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <button id="btn">Follow</button>
+    <script>
+            let button=document.getElementById('btn');
+            button.addEventListener('click',function onclick(e){
+                console.log(button)
+              button.textContent="Unfollow"
+              
+              button.style.backgroundColor = "rgb(231, 117, 117)"
+            })
+    </script>
+</body>
+</html>
